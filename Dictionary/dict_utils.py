@@ -86,3 +86,21 @@ def check_dictionary(param, given_dict):
             return "SUCCESS"
     else:
         return "FAIL"
+        
+        
+def convert_list_dict(input_list):
+    """
+    convert given list in to dictionary
+    """
+
+    result_dict = dict(map(None, *[iter(input_list)]*2))
+    return result_dict
+    
+    
+def dict_to_string(input_dict):
+    """
+    convert given dictionary to string
+    """
+    
+    from json import dumps
+    return dumps(input_dict)
