@@ -89,16 +89,16 @@ if __name__ == "__main__":
         }
     }
 }
-    #response = insert_data("scale_tests", "scale_tests", data)
-    #response = get_data("scale_tests", "scale_tests", {"test-id": 123456})
+    #response = insert_data("record", "record", data)
+    #response = get_data("record", "record", {"test-id": 123456})
     #server_list = ["server1", "server2"]
-    #response = update_data("scale_tests", "scale_tests", {"test-id": 123456}, "setup-completed-servers", server_list)
-    response = update_data("tests", "scale_tests", {"test-id": "2310132140559"}, "phase", "cleanup")
-    #response = get_data("scale_tests", "scale_tests", {"test-id": 123456})
-    response = get_data("tests", "scale_tests", {"test-id": "2310132140559"})
-    #response = remove_data("scale_tests", "scale_tests", {"test-id": 12345})
-    #response = get_data("scale_tests", "scale_tests", {"test-id": 12345})
+    #response = update_data("record", "record", {"test-id": 123456}, "setup-completed-servers", server_list)
+    response = update_data("tests", "record", {"test-id": "2310132140559"}, "phase", "cleanup")
+    #response = get_data("record", "record", {"test-id": 123456})
+    response = get_data("tests", "record", {"test-id": "2310132140559"})
+    #response = remove_data("record", "record", {"test-id": 12345})
+    #response = get_data("record", "record", {"test-id": 12345})
     #data["data"]["setup"]["test-id"] = "123456.setup"
-    #response = replace_data("scale_tests", "scale_tests", {"test-id": 123456}, data)
-    #response = get_data("scale_tests", "scale_tests", {"test-id": 12345})
+    #response = replace_data("record", "record", {"test-id": 123456}, data)
+    #response = get_data("record", "record", {"test-id": 12345})
     print response
