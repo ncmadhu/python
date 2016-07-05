@@ -88,13 +88,21 @@ def check_dictionary(param, given_dict):
         return "FAIL"
         
         
-def convert_list_dict(input_list):
+def convert_list_to_dict(input_list):
     """
     convert given list in to dictionary
     """
 
     result_dict = dict(map(None, *[iter(input_list)]*2))
     return result_dict
+    
+    
+def list_to_dict(keyList, valueList):
+    """
+    creates a dictionary from given keylist and value list.
+    """
+    dictObject = dict(izip_longest(keyList, valueList))
+    return dictObject
     
     
 def dict_to_string(input_dict):
