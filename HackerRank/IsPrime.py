@@ -1,5 +1,5 @@
 # Enter your code here. Read input from STDIN. Print output to STDOUT
-
+#primality tests
 def isPrime(n):
     if n <= 1:
         return "Not prime"
