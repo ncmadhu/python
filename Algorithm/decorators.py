@@ -17,3 +17,21 @@ def display(message):
 
 print display("Madhu")
 
+
+def decoratorWithArgs(arg1, arg2):
+
+    def actualDecorator(originalFunc):
+
+        def wrapper(*args,**kwargs):
+
+            return "{} {} {}".format(arg1,arg2, originalFunc(*args, **kwargs))
+        return wrapper
+
+    return actualDecorator
+
+@decoratorWithArgs("arg1", "arg2")
+def display(message):
+
+    return message
+
+print display("Madhu")
