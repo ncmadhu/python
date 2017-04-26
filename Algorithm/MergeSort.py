@@ -1,7 +1,10 @@
 # Author: Madhu Chakravarthy
 # Date: 26-04-2017
 
+
 def mergeSort(unsortedList):
+    global counter
+    counter += 1
 
     length = len(unsortedList)
 
@@ -50,9 +53,23 @@ def merge(l1,l2):
 
 if __name__ == "__main__":
 
+    counter = 0
     print "[99,23,11,45,22,22]: {}".format(mergeSort([99,23,11,45,22,22]))
+    print "counter: {}".format(counter)
+    counter = 0
     print "[22,22]: {}".format(mergeSort([22,22]))
+    print "counter: {}".format(counter)
+    counter = 0
     print "[99,23,45,22,22]: {}".format(mergeSort([99,23,45,22,22]))
+    print "counter: {}".format(counter)
+    counter = 0
     print "[99]: {}".format(mergeSort([99]))
+    counter = 0
+    print "counter: {}".format(counter)
+    counter = 0
     print "[]: {}".format(mergeSort([]))
+    print "counter: {}".format(counter)
+    counter = 0
+    print "[100,150,34,30,12,5,1,122,10,20,2,35,32,56,23,89,33,55,11,0]: {}".format(mergeSort([100,150,34,30,12,5,1,122,10,20,2,35,32,56,23,89,33,55,11,0]))
+    print "counter: {}".format(counter)
 
