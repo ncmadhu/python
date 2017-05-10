@@ -22,6 +22,7 @@ def sample_next_function(arg1, arg2, arg3, arg4,
 
     '''
     sample next function
+    pep8 - max 5 args
     '''
 
     print "sample next function"
