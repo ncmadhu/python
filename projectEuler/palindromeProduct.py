@@ -8,7 +8,6 @@ def palindromeProduct(digits):
 
     maxnumber = int(math.pow(10, digits) - 1)
     minnumber = int(math.pow(10, digits -1))
-    #minnumber = 910
     #print maxnumber,minnumber
     palindromeNumber = None
 
@@ -41,7 +40,5 @@ def findPalindrome(product):
 
 if __name__ == "__main__":
 
-    #palindromeProduct(2)
+    palindromeProduct(2)
     palindromeProduct(3)
-    #print findPalindrome(9009)
-    #print findPalindrome(90009)
