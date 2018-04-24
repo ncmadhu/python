@@ -1,0 +1,23 @@
+#Author: Madhu Chakravarthy
+#Date: 23-04-2018
+class Solution(object):
+    def reverse(self,x):
+        num = str(x)
+        signed = False
+        if num[0] == '-':
+            signed = True
+        reverseNum = 0
+        length = len(num)
+        for index in range(length -1 , -1, -1):
+            reverseNum = reverseNum * 10 + int(num[index])
+
+        if signed:
+            reverseNum = "-" + str(reverseNum)
+            reverseNum = int(reverseNum)
+
+        return reverseNum
+
+if __name__ == "__main__":
+    sol =  Solution()
+    print sol.reverse(123)
+
