@@ -31,6 +31,10 @@ class Solution(object):
 
     def checkRowMatch(self, gameBoard, rowLength, colLength):
         # check consecutive elements in a row are same
+        #. . .
+        #X X X
+        #. . .
+
         winner = None
         for row in range(rowLength):
             winnerFound =  True
@@ -53,6 +57,10 @@ class Solution(object):
 
     def checkColumnMatch(self, gameBoard, rowLength, colLength):
         #check consecutive elements in a column are same
+        #X . .
+        #X . .
+        #X . .
+
         winner = None
         for col in range(colLength):
             winnerFound = True
