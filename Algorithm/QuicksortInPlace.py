@@ -10,10 +10,8 @@ def quicksort(arr, lo, hi):
     if lo < hi:
 
         p = partition(arr, lo, hi)
-        """
         quicksort(arr, lo, p)
         quicksort(arr, p + 1, hi)
-        """
     return arr
 
 
@@ -36,6 +34,7 @@ def partition(arr, lo, hi):
         print i,j
 
         if i >= j:
+            arr[i],arr[j] = arr[j],arr[i]
             return j
         arr[i],arr[j] = arr[j],arr[i]
 
