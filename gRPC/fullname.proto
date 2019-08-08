@@ -1,0 +1,8 @@
+syntax = "proto3";
+
+package fullnameProto;
+
+message Fullname {
+    string firstname = 1;
+    string lastname = 2;
+}
