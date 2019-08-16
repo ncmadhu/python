@@ -11,6 +11,6 @@ def extras():
     # 0 -> 0000 -> 1111 -> -8 + 4 + 2 + 1 -> -1 ( 0 - 1 = -1)
     print(bin(~5))
     print(str(bin(15)) + " ^ " + str(bin(10)) + " -> " + str(bin(15 ^ 10)))
-
+    print(str(bin()))
 if __name__ == "__main__":
     extras()
